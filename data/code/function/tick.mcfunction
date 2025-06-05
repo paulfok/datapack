@@ -34,6 +34,3 @@ function code:lobby/tick
 execute unless entity @n[type=creeper] run summon creeper 0 62 4 {NoAI:true,Rotation:[180F,0F],active_effects:[{id:regeneration,amplifier:255,duration:-1,show_particles:false}]}
 execute if score .defuse game.state matches 0..1 as @e[tag=lobby.defuse] run data modify entity @s text set value '[{"text": "Defuse\\n"},{"score": {"name": ".defuse","objective": "queued"}},{"text": " queued"}]'
 execute if score .defuse game.state matches 2 as @e[tag=lobby.defuse] run data modify entity @s text set value '[{"text": "Defuse\\n"},{"score": {"name": ".defuse","objective": "playing"}},{"text": " playing"}]'
-
-execute store result score .tps vars run tps
-scoreboard players set .tps vars 1
