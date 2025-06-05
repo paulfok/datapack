@@ -22,6 +22,7 @@ scoreboard objectives add queued dummy
 # 2 - started
 # 3 - freeze time or smth
 scoreboard objectives add game.state dummy
+scoreboard objectives add vars dummy
 
 scoreboard objectives add ak47.timer dummy
 scoreboard objectives add ak47.ammo dummy
