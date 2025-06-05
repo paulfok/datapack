@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "hit_armor_stand": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:creeper"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "code:lobby/defuse/join"
+    }
+  }
+  
